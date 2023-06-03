@@ -1,0 +1,13 @@
+@import "../utils/variables";
+
+.cards-container {
+  margin-top: 4%;
+  padding: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 40px;
+  justify-content: space-around;
+  background-color: $background-grey;
+  border-radius: 25px;
+}
