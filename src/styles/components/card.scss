@@ -1,0 +1,35 @@
+@import "../utils/variables";
+
+.card-thumb {
+  min-width: 343px;
+  height: 343px;
+  border-radius: 10px;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    $text-primary;
+  position: relative;
+
+  .cover-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    h2 {
+      color: white;
+      margin-top: 275px;
+      margin-right: 5%;
+      margin-left: 5%;
+      font-size: 18px;
+    }
+  }
+}
