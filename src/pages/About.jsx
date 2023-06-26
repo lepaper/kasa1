@@ -2,6 +2,7 @@ import Banner from "../components/Banner"
 import aboutBanner from "../assets/about_img.png"
 import Collapse from "../components/Collapse"
 import "../styles/pages/about.scss"
+import aboutBannerMobile from "../assets/about_img_mobile.png"
 
 function About() {
   const collapseTitles = ["Fiabilité", "Respect", "Service", "Sécurité"]
@@ -13,6 +14,7 @@ function About() {
         source={aboutBanner}
         altText={`image de montagne`}
         home={false}
+        sourceMobile={aboutBannerMobile}
       />
       <div className="collapse-container">
         {collapseTitles.map((collapseTitle, i) => (

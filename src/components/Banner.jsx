@@ -1,6 +1,6 @@
 import "../styles/components/Banner.scss"
 
-function Banner({ source, altText, home }) {
+function Banner({ source, sourceMobile, altText, home }) {
   return (
     <div className="img-container">
       {home ? (
@@ -10,6 +10,7 @@ function Banner({ source, altText, home }) {
         </>
       ) : (
         <picture>
+          <source srcSet={sourceMobile} media="(max-width: 768px)" />
           <img src={source} alt="Logo de Kasa" />
         </picture>
       )}

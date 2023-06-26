@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import header_logo from "../assets/logo1.png"
+import header_logo_mobile from "../assets/header_logo_mobile.png"
 import "../styles/components/header.scss"
 
 function Header() {
@@ -7,6 +8,7 @@ function Header() {
     <header>
       <div>
         <picture>
+        <source srcSet={header_logo_mobile} media="(max-width: 768px)" />
           <img src={header_logo} alt="Logo de Kasa" />
         </picture>
       </div>

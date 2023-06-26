@@ -10,4 +10,7 @@
   justify-content: space-around;
   background-color: $background-grey;
   border-radius: 25px;
+  @media (max-width: $mobile) {
+    background-color: white;
+  }
 }
